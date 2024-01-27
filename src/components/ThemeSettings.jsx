@@ -10,7 +10,7 @@ function ThemeSettings() {
     useStateContext();
   return (
     <div className="border-0 border-blue-500 bg-half-transparent w-screen fixed nav-item top-0 right-0">
-      <div className="border-0 border-green-500 float-right h-screen bg-white dark:text-gray-200 dark:[#484b52] w-400">
+      <div className="border-0 border-green-500 float-right h-screen bg-white dark:text-gray-200 dark:bg-[#484b52] w-400">
         <div className="border-0 border-pink-500 flex justify-between items-center p-4 ml-4">
           <p className="font-semibold text-xl">Settings</p>
           <button

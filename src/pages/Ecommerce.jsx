@@ -99,7 +99,7 @@ function Ecommerce() {
                 <p>
                   <span className="text-3xl font-semibold">$45,250</span>
                 </p>
-                <p className="text-gray-500 mt-1">Expense</p>
+                <p className="text-gray-500 dark:text-white mt-1">Expense</p>
               </div>
 
               <div className="mt-5">

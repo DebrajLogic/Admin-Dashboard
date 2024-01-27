@@ -17,7 +17,7 @@ import { Header } from "../components";
 
 function Customers() {
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:bg-[#484b52] rounded-3xl">
       <Header title="Customers" category="Page" />
       <GridComponent
         id="gridcomp"
