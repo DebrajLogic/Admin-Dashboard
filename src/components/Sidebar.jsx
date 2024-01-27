@@ -6,7 +6,8 @@ import { links } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
 function Sidebar() {
-  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const { activeMenu, setActiveMenu, screenSize, currentColor } =
+    useStateContext();
 
   const handleCloseSidebar = () => {
     if (activeMenu && screenSize <= 900) {
@@ -56,6 +57,9 @@ function Sidebar() {
                         to={`/${link.name}`}
                         key={link.name}
                         onClick={handleCloseSidebar}
+                        style={({ isActive }) => ({
+                          backgroundColor: isActive ? currentColor : "",
+                        })}
                         className={({ isActive }) =>
                           isActive ? activeLink : normalLink
                         }
